@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: solid black 1;
+        }
+
+        .row{
+            background-color: rgb(103, 169, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+        }
+
+        .col{
+            background-color: brown;
+            flex: 1;
+            padding: 2px;
+            margin: 2px;
+            }   
+    </style>
+</head>
+<body>
+    {% for x in range(0,fila): %}
+    <div class="row">
+        {% for x in range(0,columna): %}
+            <div class="col">
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    {% if frase == "hola" %}
+        <p>La frase dice hola</p>
+    {% endif %}
+</body>
+</html>

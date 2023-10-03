@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--enlazar css-->
+    <link rel="stylesheet" href="text/css" href="{{ url_for('static', filename='css/boostrao-5/boostrap.min.css') }}"/>
+    <!--enlazar js-->
+    <script
+    typr="text/javascript"
+    src="{{ url_for('static', filename='js/boostrao-5/boostrap.bundle.min.css') }}"
+    ></script>
+</head>
+<body>
+    <div class="container p-5 my-5 b-5">
+        <h1>Index Page</h1>
+        <h1>User:</h1>
+        <h3>{{session['username']}}</h3>
+        <h3>{{session['useremail']}}</h3>
+    </div>
+</body>
+</html>
